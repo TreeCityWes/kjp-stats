@@ -1,0 +1,42 @@
+name: Update KJP Stats
+
+on:
+  # Run on push and manually…
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  # …and once an hour (change the cron as you like)
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run KJP stats script
+        run: python main.py
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kjp_stats.json
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update KJP stats"
+            git push
+          else
+            echo "No changes to commit"
+          fi
