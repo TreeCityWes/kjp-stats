@@ -1,12 +1,10 @@
 name: Update KJP Stats
 
 on:
-  # Run on push and manually…
   push:
     branches:
       - main
   workflow_dispatch:
-  # …and once an hour (change the cron as you like)
   schedule:
     - cron: '0 * * * *'
 
