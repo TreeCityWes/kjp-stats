@@ -1,0 +1,43 @@
+name: Update KJP Stats
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write  # This gives the workflow write permissions to the repository
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run stats update
+      run: python main.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add kjp_stats.json
+        if ! git diff --cached --quiet; then
+          git commit -m "chore: update KJP stats"
+          git push
+        else
+          echo "No changes to commit"
+        fi 
