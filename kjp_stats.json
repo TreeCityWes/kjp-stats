@@ -1,17 +1,17 @@
 {
   "stakingPool": "u1ZscFB8fcCcZDtmLd4LHHVmqTASkEbjq2gY4d7Dgcq",
   "kjpMint": "3zGcFLiVtYesdjqphEEHfqWo1bNsnKZ2SDy6AGVapump",
-  "kjpBalance": 16079795.245573,
+  "kjpBalance": 16053513.029977,
   "dexscreener": {
-    "priceUsd": "0.00004210",
-    "priceChange24h": 7.8,
-    "volume24h": 2424.68,
-    "buys24h": 85,
-    "sells24h": 85,
-    "trades24h": 170,
+    "priceUsd": "0.00004218",
+    "priceChange24h": 10.52,
+    "volume24h": 2356.48,
+    "buys24h": 87,
+    "sells24h": 91,
+    "trades24h": 178,
     "holders": null,
-    "liquidityUsd": 23556.67,
-    "fullyDilutedValuation": 42105,
-    "marketCap": 42105
+    "liquidityUsd": 23504.35,
+    "fullyDilutedValuation": 42186,
+    "marketCap": 42186
   }
 }
