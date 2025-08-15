@@ -4,14 +4,14 @@
   "kjpBalance": 14070366.123091,
   "dexscreener": {
     "priceUsd": "0.00003243",
-    "priceChange24h": -17.58,
-    "volume24h": 2144.34,
+    "priceChange24h": -11.68,
+    "volume24h": 2134.15,
     "buys24h": 41,
-    "sells24h": 32,
-    "trades24h": 73,
+    "sells24h": 24,
+    "trades24h": 65,
     "holders": null,
-    "liquidityUsd": 22197.39,
-    "fullyDilutedValuation": 32432,
-    "marketCap": 32432
+    "liquidityUsd": 22175.52,
+    "fullyDilutedValuation": 32437,
+    "marketCap": 32437
   }
 }
