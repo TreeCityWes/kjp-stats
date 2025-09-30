@@ -3,15 +3,15 @@
   "kjpMint": "3zGcFLiVtYesdjqphEEHfqWo1bNsnKZ2SDy6AGVapump",
   "kjpBalance": 7374289.776618,
   "dexscreener": {
-    "priceUsd": "0.00001398",
-    "priceChange24h": -1.94,
-    "volume24h": 49.48,
+    "priceUsd": "0.00001383",
+    "priceChange24h": -2.97,
+    "volume24h": 50.56,
     "buys24h": 4,
-    "sells24h": 5,
-    "trades24h": 9,
+    "sells24h": 6,
+    "trades24h": 10,
     "holders": null,
-    "liquidityUsd": 15029,
-    "fullyDilutedValuation": 13981,
-    "marketCap": 13981
+    "liquidityUsd": 14908.04,
+    "fullyDilutedValuation": 13835,
+    "marketCap": 13835
   }
 }
