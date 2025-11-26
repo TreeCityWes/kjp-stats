@@ -5,12 +5,12 @@
   "dexscreener": {
     "priceUsd": "0.000006146",
     "priceChange24h": 4.62,
-    "volume24h": 2.7,
-    "buys24h": 7,
+    "volume24h": 3.11,
+    "buys24h": 8,
     "sells24h": 0,
-    "trades24h": 7,
+    "trades24h": 8,
     "holders": null,
-    "liquidityUsd": 8293,
+    "liquidityUsd": 8291.86,
     "fullyDilutedValuation": 6146,
     "marketCap": 6146
   }
